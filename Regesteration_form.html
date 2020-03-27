@@ -1,56 +1,66 @@
-<!-- Friday, 13 March 2020 at 02:19:23  --> 
+﻿<!-- Friday, 13 March 2020 at 02:19:23  --> 
 <!-- This is an HTML barebones/very basic form.--> 
 <!-- It is modified from Dan examples -->
-
 <!-- Sami -->
 
+<!-- Update 27.03.2020 -->
+<!-- Added styles, cleaned up the page -->
+<!-- Madina Goigova-->
 
 <html>
 <head>
 <meta charset="UTF-8">
+<title>Cusotmer - Registration</title>
 
-<style> 
-/* 
-Please use this area to do soms CSS formatting.
-*/
-</style>
-
-
-<script>
-/*
-Please use this area to do smoe Javascript programming whenever needed.
-*/
-</script>
+    <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet1.css" />
 
 </head>
 
 
 <body>
-    <h1>New User Regesteration Form</h1>
+	
+	<div class = "header">
+		<a href="https://my.sage.co.uk/"><img src="Logos/sage-logo.svg" alt="Sage logo"></a>
+        <span class="header-text">Register Account</span>
+	</div>
+	
     <date>
-    <hr>
 
 <!-- Insertion to insert.php -->
 
 <form action ="insert.php" method="post" >
-    <p>
-    <label for="firstname">First name: </label> <br>
+    <div class="container">
+        <h1>New User</h1>
+        <p>
+            <label for="firstname">First name: </label> <br>
             <input type="text" name="firstname"><br>
-           
-    <label for="lastname">Last name: </label><br>
+
+            <label for="lastname">Last name: </label><br>
             <input type="text" name="lastname"><br>
-        
-    <label for="email">Email: </label><br>
+
+            <label for="email">Email: </label><br>
             <input type="text" name="email"><br>
 
-              <label for="UserName">Username: </label><br>
+            <label for="UserName">Username: </label><br>
             <input type="text" name="UserName"><br>
-              <label for="Password">Password: </label><br>
-            <input type="text" name="Password"><br>
+            <label for="Password">Password: </label><br>
+            <input type="password" name="Password"><br>
+
+            <button class="registerbtn" type="submit"> Register </button>
+        </p>
+    </div>
+    <div class="linkcontainer">
+        <div class="linklist">
             
+            <a href="https://my.sage.co.uk/public/login-help/">Need help logging onto My Sage? </a><br />
+            <a href="https://my.sage.co.uk/public/product-help/">Sage product help</a><br />
+
+            <!--MG TODO input the sign in page address-->
+            <h6> Existing user?</h6> 
+            <form><button class="loginbtn" formaction="#">Sign in</button></form>
+        </div>
+    </div>
     
-    <input type="submit" value="Submit"> 
-    </p>
 </form>
 
 </body>
