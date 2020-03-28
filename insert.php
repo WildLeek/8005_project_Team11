@@ -13,14 +13,14 @@
     $name2=$_POST["lastname"];
     $email=$_POST["email"];
     $pass=$_POST["Password"];
-    $usr=$_POST["UserName"];
+   /* $usr=$_POST["UserName"];*/
     ?>
 
 
 <?php
     //SQL query that send form values to the database.
 
-$sql = "INSERT INTO customer (FirstName, SureName, email,password,userName) VALUES ('$name1', '$name2', '$email','pass', '$usr')";
+$sql = "INSERT INTO customer (FirstName, SureName, email,password) VALUES ('$name1', '$name2', '$email','pass')";
 
     //close the connection with DB
 $conn->query($sql);

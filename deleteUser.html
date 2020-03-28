@@ -1,20 +1,37 @@
 
 <html>
-<body>
+<head>
+<meta charset="UTF-8">
+<title>Delete user</title>
 
+    <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet1.css" />
+
+</head>
+<body>
+	
+<div class = "header">
+		<a href="https://my.sage.co.uk/"><img src="Logos/sage-logo.svg" alt="Sage logo"></a>
+        <span class="header-text">Delete user by e-mail</span>
+	</div>
+	
+    <date>
 
 <!--this form will call php file to delete a record-->
 <!--deleting will be by user name-->
 
-<h1>Delete by user name</h1>
 <hr>
 <form action ="delete.php" method="post" >
     <p>
-    <label for="user">User name: </label> <br>
-            <input type="text" name="user">
+    <label for="user">Email: </label> <br>
+            <input type="text" name="email">
     <input type="submit" value="Submit">
     </p>
 </form></body>
 </html>
 
 
+
+
+
+	
+	

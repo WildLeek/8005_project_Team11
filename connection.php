@@ -10,7 +10,7 @@
     if ($conn->connect_error) {
         die("<br><h1> Hi!, <br> Connection failed: <br></h1><h2>" . $conn->connect_error);
     }
-    echo "<h3> Connected successfully<br></h3>";
+    echo "<h5> Connected.<br></h5>";
 ?>
 
 
