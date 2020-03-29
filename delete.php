@@ -10,19 +10,19 @@
     
     
     //assign to php variable
-    $user=$_POST["user"];
+    $email=$_POST["email"];
  
     
     
     //SQL query that delete form the database.
-    $sql = "DELETE FROM customer WHERE userName='$user'";
+    $sql = "DELETE FROM customer WHERE email='$email'";
 
     $conn->query($sql);
     
     //close the connection with DB
 $conn->close();
 
-    echo $user." "."was deleted successfully.";
+    echo $email." "."was deleted successfully.";
     
     //Sami-- Friday, 13 March 2020 at 06:50:34
    ?>
