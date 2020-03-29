@@ -78,7 +78,7 @@ input[type="password"]:focus {
     font-size: 15px;
 }
 
-.loginbtn {
+.whitebtn {
     cursor: pointer;
     margin-top: 15px !important;
     padding: 15px;
@@ -95,12 +95,12 @@ input[type="password"]:focus {
     border-color: #009900
 }
 
-.loginbtn:hover {
+.whitebtn:hover {
     background-color: #009900;
     color: #ffffff;
 }
 
-.registerbtn {
+.greenbtn {
     cursor: pointer;
     margin-top: 15px !important;
     padding: 15px;
@@ -117,6 +117,6 @@ input[type="password"]:focus {
     border-radius: 8px;
 }
 
-.registerbtn:hover {
+.greenbtn:hover {
     background-color: #008600;
 }
