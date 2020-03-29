@@ -1,0 +1,53 @@
+<!-- Madina Goigova 29.03.2020 1400-->
+<!-- Signin form-->
+
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, " charset="UTF-8">
+    <title>Cusotmer - LogIn</title>
+
+    <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet1.css" />
+
+</head>
+
+
+<body>
+
+    <div class="header">
+        <a href="https://my.sage.co.uk/"><img src="Logos/sage-logo.svg" alt="Sage logo"></a>
+        <span class="header-text">Log In</span>
+    </div>
+
+    <date>
+
+        <!-- ToDo lookup the user to sign in -->
+
+        <form action="insert.php" method="post">
+            <div class="container">
+                <h1>Log In</h1>
+                <p>
+                    <label for="email">Email: </label><br>
+                    <input type="text" placeholder="Enter Email" name="email"><br>
+
+                    <label for="Password">Password: </label><br>
+                    <input type="password" placeholder="Enter Password" name="Password"><br>
+
+                    <button class="registerbtn" type="submit"> Register </button>
+                </p>
+            </div>
+            <div class="linkcontainer">
+                <div class="linklist">
+
+                    <a href="https://my.sage.co.uk/public/login-help/">Need help logging onto My Sage? </a><br />
+                    <a href="https://my.sage.co.uk/public/product-help/">Sage product help</a><br />
+
+                    <!--MG TODO input the registration page address-->
+                    <h6> Register new user?</h6>
+                    <button class="loginbtn" type="submit" formaction="#">Sign Up</button>
+                </div>
+            </div>
+
+        </form>
+
+</body>
+</html>
