@@ -1,4 +1,5 @@
-﻿a {
+﻿a:link {
+    text-decoration:none;
     color: #003349;
 }
 
@@ -14,22 +15,32 @@ body{
     padding-right: 100px;
 }
 
-h1 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 h6 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #002e00;
 }
 
+.img-position{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
 .header {
     height: 48px;
     background: #ffffff;
     margin-left: 0;
-    margin-right: 0
+    margin-right: 0;
+    border: none;
+}
+
+.header-logo{
+    float:left;
+    padding:10px;
+    line-height: 25px;
+    height: 40px;
+    border: none;
 }
 
 .header .header-text {
@@ -42,7 +53,7 @@ h6 {
     line-height: 25px;
     margin-left: 15px;
     padding: 2px 15px;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 input[type="text"],
@@ -62,6 +73,27 @@ input[type="password"]:focus {
     outline: none;
 }
 
+.greenbtn {
+    cursor: pointer;
+    margin-top: 15px !important;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    background-color: #009900;
+    border: none;
+    white-space: normal !important;
+    word-wrap: break-word;
+    word-break: normal;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+
+    .greenbtn:hover {
+        background-color: #008600;
+    }
+
 .label{
     border: 1px solid;
 }
@@ -76,6 +108,11 @@ input[type="password"]:focus {
     min-height: 1px;
     padding: 15px;
     font-size: 15px;
+}
+
+.navbar{
+    overflow:hidden;
+    background-color:#ffffff;
 }
 
 .whitebtn {
@@ -98,25 +135,4 @@ input[type="password"]:focus {
 .whitebtn:hover {
     background-color: #009900;
     color: #ffffff;
-}
-
-.greenbtn {
-    cursor: pointer;
-    margin-top: 15px !important;
-    padding: 15px;
-    display: block;
-    width: 100%;
-    color: #ffffff;
-    background-color: #009900;
-    border: none;
-    white-space: normal !important;
-    word-wrap: break-word;
-    word-break: normal;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 8px;
-}
-
-.greenbtn:hover {
-    background-color: #008600;
 }

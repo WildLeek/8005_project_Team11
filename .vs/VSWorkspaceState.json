@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StyleSheets",
+    "\\TEST"
   ],
-  "SelectedNode": "\\Regesteration_form.html",
+  "SelectedNode": "\\TEST\\dropdownScriptTest.js",
   "PreviewInSolutionExplorer": false
 }

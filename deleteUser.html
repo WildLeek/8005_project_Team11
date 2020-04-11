@@ -1,4 +1,4 @@
-
+﻿
 <html>
 <head>
 <meta charset="UTF-8">
@@ -9,9 +9,10 @@
 </head>
 <body>
 	
-<div class = "header">
-		<a href="https://my.sage.co.uk/"><img src="Logos/sage-logo.svg" alt="Sage logo"></a>
-        <span class="header-text">Delete user by e-mail</span>
+    <div class = "header">
+		<a href="https://sage.co.uk/">
+            <img src="Logos/sage-logo.svg" alt="Sage logo">
+        </a>
 	</div>
 	
     <date>
@@ -19,14 +20,16 @@
 <!--this form will call php file to delete a record-->
 <!--deleting will be by user name-->
 
-<hr>
-<form action ="delete.php" method="post" >
-    <p>
-    <label for="user">Email: </label> <br>
-            <input type="text" name="email">
-    <input type="submit" value="Submit">
-    </p>
-</form></body>
+        <div class="container">
+            <form action="delete.php" method="post">
+                <p>
+                    <label for="user">Email: </label> <br>
+                    <input type="text" name="email">
+                    <button class="greenbtn" type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+</body>
 </html>
 
 
