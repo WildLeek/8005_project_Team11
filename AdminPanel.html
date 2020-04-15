@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Sage - admin panel</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheets/common.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheets/adminPanel.css" />
+    <script type="text/javascript" src="Scripts/adminPanel.js"></script>
+</head>
+<body>
+    <header>
+        <ul class="topnav">
+            <li class="logo"><a href="https://www.sage.com/en-gb/"><img src="Logos/sage-logo.svg" alt="Sage Logo"></a></li>
+            <li class="dropdown-right">
+                <div class="dropdown">
+                    <button class="menu-dropbtn" onclick="showMenu()">Welcome</button>
+                    <div class="dropdown-content right-aligned-content" id="menuDropdown">
+                        <a href="https://my.sage.co.uk/public/help.aspx#/customer/support">Account Settings</a>
+                        <a href="https://www.sage.com/en-gb/support/">Log Out</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="flex-window">
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'feedback')" id="defaultOpen">See all feedback</button>
+                <button class="tablinks" onclick="openTab(event, 'hiddenQueue')">Show hidden queue</button>
+                <button class="tablinks" onclick="openTab(event, 'admin')">Administration</button>
+            </div>
+
+            <div id="feedback" class="tabcontent">
+                <h6>Feedback</h6>
+                <p>ToAdd: PHP code to show the full queue</p>
+            </div>
+
+            <div id="hiddenQueue" class="tabcontent">
+                <h6>Hidden Queue</h6>
+                <p>ToAdd: PHP code for the hidden queue</p>
+            </div>
+
+            <div id="admin" class="tabcontent">
+                <h6>Admin controls</h6>
+                <p>ToAdd links for document generation and user control</p>
+                <p>ToAdd PHP code to delete users</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

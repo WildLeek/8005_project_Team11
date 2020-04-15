@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Scripts",
     "\\StyleSheets",
     "\\TEST"
   ],
-  "SelectedNode": "\\TEST\\dropdownScriptTest.js",
+  "SelectedNode": "\\Scripts\\adminPanel.js",
   "PreviewInSolutionExplorer": false
 }
