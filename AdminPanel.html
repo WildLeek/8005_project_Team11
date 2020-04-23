@@ -33,17 +33,52 @@
             </div>
 
             <div id="feedback" class="tabcontent">
-                <h6>Feedback</h6>
-                <p>ToAdd: PHP code to show the full queue</p>
+                <h3>Feedback</h3>
+                <!--ToDo add php code that first checks if there are any feedbacks to display-->
+                <table id="all-feedback" class="table">
+                    <thead>
+                        <tr>
+                            <th>Feedback</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                           <th class="feedback">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio lacus, viverra vel sagittis vel, bibendum nec odio. Donec at maximus augue, et malesuada neque. Sed convallis pulvinar nulla. Nullam mollis non dui sed pulvinar. Pellentesque id ullamcorper nulla. Phasellus blandit congue finibus. Duis ultrices laoreet congue</p>
+                           </th>
+                           <th class="rating">Rating 1</th>
+                       </tr>
+                       <tr>
+                           <th class="feedback">Feedback 2 </th>
+                           <th class="rating">Rating 2 </th>
+                       </tr>
+                       <tr>
+                           <th class="feedback">Feedback 3 </th>
+                           <th class="rating">Rating 3 </th>
+                       </tr>
+                    </tbody>
+                    <!--<?php
+                        include ("connection.php");
+                        $result = $conn->query("SELECT * FROM feedbacks");
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                                echo "<th>".$row["feedback"]."</th>";
+                                echo "<th>".$row["rank"]."</th>";
+                            echo "</tr>";
+                        }
+                        $conn->close();
+                    ?>-->
+                </table>
             </div>
 
             <div id="hiddenQueue" class="tabcontent">
-                <h6>Hidden Queue</h6>
+                <h3>Hidden Queue</h3>
                 <p>ToAdd: PHP code for the hidden queue</p>
             </div>
 
             <div id="admin" class="tabcontent">
-                <h6>Admin controls</h6>
+                <h3>Admin controls</h3>
                 <p>ToAdd links for document generation and user control</p>
                 <p>ToAdd PHP code to delete users</p>
             </div>

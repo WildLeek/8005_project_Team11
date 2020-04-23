@@ -26,7 +26,7 @@
     //SQL query will be saved to  variable called result
     $result = $conn->query("SELECT * FROM feedbacks");
 
-//result variable will be iterated  by method fetch saved in variable row
+	//result variable will be iterated  by method fetch saved in variable row
     echo "<ul>";
     while($row = $result->fetch_assoc()) {
 
