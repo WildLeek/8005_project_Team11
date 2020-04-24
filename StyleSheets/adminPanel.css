@@ -54,7 +54,7 @@ div.flex-window {
     background: #ffffff;
     width: 75%;
     height: 800px;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .tabcontent h3
