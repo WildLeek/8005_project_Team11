@@ -31,3 +31,9 @@ function openTab(event, tabItem) {
 window.onload = function () {
     document.getElementById("defaultOpen").click();
 }
+
+function popUp(input) {
+    if (input === "delete") {
+        var myWindow = window.open("deleteUser.html", "_blank", "toolbar=no, scrollbars=yes, top=200, left= 100, width=500, height=500");
+    } 
+}

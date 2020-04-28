@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title> Sage - admin panel</title>
@@ -8,10 +9,13 @@
     <link rel="stylesheet" type="text/css" href="StyleSheets/adminPanel.css" />
     <script type="text/javascript" src="Scripts/adminPanel.js"></script>
 </head>
+
 <body>
     <header>
         <ul class="topnav">
-            <li class="logo"><a href="https://www.sage.com/en-gb/"><img src="Logos/sage-logo.svg" alt="Sage Logo"></a></li>
+            <li class="logo">
+                <a href="https://www.sage.com/en-gb/"><img src="Logos/sage-logo.svg" alt="Sage Logo"></a>
+            </li>
             <li class="dropdown-right">
                 <div class="dropdown">
                     <button class="menu-dropbtn" onclick="showMenu()">Welcome</button>
@@ -43,20 +47,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                       <tr>
-                           <th class="feedback">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio lacus, viverra vel sagittis vel, bibendum nec odio. Donec at maximus augue, et malesuada neque. Sed convallis pulvinar nulla. Nullam mollis non dui sed pulvinar. Pellentesque id ullamcorper nulla. Phasellus blandit congue finibus. Duis ultrices laoreet congue</p>
-                           </th>
-                           <th class="rating">Rating 1</th>
-                       </tr>
-                       <tr>
-                           <th class="feedback">Feedback 2 </th>
-                           <th class="rating">Rating 2 </th>
-                       </tr>
-                       <tr>
-                           <th class="feedback">Feedback 3 </th>
-                           <th class="rating">Rating 3 </th>
-                       </tr>
+                        <tr>
+                            <th class="feedback">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio lacus, viverra vel sagittis vel, bibendum nec odio. Donec at maximus augue, et malesuada neque. Sed convallis pulvinar nulla. Nullam mollis non dui sed pulvinar. Pellentesque id ullamcorper nulla. Phasellus blandit congue finibus. Duis ultrices laoreet congue</p>
+                            </th>
+                            <th class="rating">Rating 1</th>
+                        </tr>
+                        <tr>
+                            <th class="feedback">Feedback 2 </th>
+                            <th class="rating">Rating 2 </th>
+                        </tr>
+                        <tr>
+                            <th class="feedback">Feedback 3 </th>
+                            <th class="rating">Rating 3 </th>
+                        </tr>
                     </tbody>
                     <!--<?php
                         include ("connection.php");
@@ -80,9 +84,10 @@
             <div id="admin" class="tabcontent">
                 <h3>Admin controls</h3>
                 <p>ToAdd links for document generation and user control</p>
-                <p>ToAdd PHP code to delete users</p>
+                <button class="greenbtn" onclick="popUp('delete')">Delete User</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>

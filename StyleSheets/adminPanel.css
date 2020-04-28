@@ -85,3 +85,13 @@ table {
         font-size: 15px;
         text-align: left;
     }
+
+.greenbtn {
+    height: 50px;
+    width: 90%;
+    margin-right: 5%;
+    margin-lefT: 5%;
+}
+.greenbtn:hover {
+    background-color: #008600;
+}

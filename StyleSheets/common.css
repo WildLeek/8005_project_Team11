@@ -110,3 +110,32 @@ div.dropdown .menu-dropbtn {
 .show {
     display: block;
 }
+
+/*Button lihnk style*/
+.greenbtn {
+    cursor: pointer;
+    margin-top: 15px !important;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    background-color: #009900;
+    border: none;
+    white-space: normal !important;
+    word-wrap: break-word;
+    word-break: normal;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+    .greenbtn:hover {
+        background-color: #008600;
+    }
+
+/*Input modification*/
+input {
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+
+}
