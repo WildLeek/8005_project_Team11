@@ -13,7 +13,7 @@
   
  $con = mysql_connect ( "localhost", "root", "root" ); 
  if (! $con) { 
- die ( '数据库连接失败' . $mysql_error () ); 
+ die ( 'Database connection failed' . $mysql_error () ); 
  } 
  mysql_select_db ( "Customer", $con ); 
  $email = null; 
