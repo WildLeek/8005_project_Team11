@@ -28,27 +28,6 @@ input[type="password"]:focus {
     outline: none;
 }
 
-.greenbtn {
-    cursor: pointer;
-    margin-top: 15px !important;
-    padding: 15px;
-    display: block;
-    width: 100%;
-    color: #ffffff;
-    background-color: #009900;
-    border: none;
-    white-space: normal !important;
-    word-wrap: break-word;
-    word-break: normal;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 8px;
-}
-
-.greenbtn:hover {
-    background-color: #008600;
-}
-
 .label{
     border: 1px solid;
 }
@@ -72,26 +51,4 @@ input[type="password"]:focus {
 .navbar{
     overflow:hidden;
     background-color:#ffffff;
-}
-
-.whitebtn {
-    cursor: pointer;
-    margin-top: 15px !important;
-    padding: 15px;
-    display: block;
-    width: 100%;
-    color: #009900;
-    background-color: transparent;
-    white-space: normal !important;
-    word-wrap: break-word;
-    word-break: normal;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 8px;
-    border-color: #009900
-}
-
-.whitebtn:hover {
-    background-color: #009900;
-    color: #ffffff;
 }

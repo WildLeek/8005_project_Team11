@@ -5,6 +5,11 @@
 <head>
     <meta charset="utf-8" />
     <title> Sage - admin panel</title>
+    <!--JQuery script, sourced by Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--tablesorter (FORK) by Rob (Mottie) Garrison-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.widgets.min.js"></script>
     <link rel="stylesheet" type="text/css" href="StyleSheets/common.css" />
     <link rel="stylesheet" type="text/css" href="StyleSheets/adminPanel.css" />
     <script type="text/javascript" src="Scripts/adminPanel.js"></script>
@@ -20,8 +25,8 @@
                 <div class="dropdown">
                     <button class="menu-dropbtn" onclick="showMenu()">Welcome</button>
                     <div class="dropdown-content right-aligned-content" id="menuDropdown">
-                        <a href="https://my.sage.co.uk/public/help.aspx#/customer/support">Account Settings</a>
-                        <a href="https://www.sage.com/en-gb/support/">Log Out</a>
+                        <button class="btn-indropdown" onclick="popUp('newPassword')">Password Settings</button>
+                        <a href="#logout">Log Out</a>
                     </div>
                 </div>
             </li>
@@ -38,28 +43,40 @@
 
             <div id="feedback" class="tabcontent">
                 <h3>Feedback</h3>
-                <!--ToDo add php code that first checks if there are any feedbacks to display-->
-                <table id="all-feedback" class="table">
+
+                <table id="all-feedback" class="table tablesorter">
                     <thead>
                         <tr>
-                            <th>Feedback</th>
-                            <th>Rating</th>
+                            <th id="header-product" class="filter-select" data-placeholder="Select a product">Product</th>
+                            <th id="header-feedback">Feedback</th>
+                            <th id="header-user">User</th>
+                            <th id="header-rating" data-placeholder="Select range">Rating</th>
+                            <th id="header-date">Date</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <th class="product">Product 1</th>
                             <th class="feedback">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio lacus, viverra vel sagittis vel, bibendum nec odio. Donec at maximus augue, et malesuada neque. Sed convallis pulvinar nulla. Nullam mollis non dui sed pulvinar. Pellentesque id ullamcorper nulla. Phasellus blandit congue finibus. Duis ultrices laoreet congue</p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio lacus, viverra vel sagittis vel, bibendum nec odio. Donec at maximus augue, et malesuada neque. Sed convallis pulvinar nulla. Nullam mollis non dui sed pulvinar. Pellentesque id ullamcorper nulla. Phasellus blandit congue finibus. Duis ultrices laoreet congue
                             </th>
-                            <th class="rating">Rating 1</th>
+                            <th>User 1</th>
+                            <th class="rating">1</th>
+                            <th class="date">01/01/01</th>
                         </tr>
                         <tr>
+                            <th class="product">Product 1</th>
                             <th class="feedback">Feedback 2 </th>
-                            <th class="rating">Rating 2 </th>
+                            <th>User 2</th>
+                            <th class="rating">2 </th>
+                            <th class="date">01/01/02</th>
                         </tr>
                         <tr>
+                            <th class="product">Product 2</th>
                             <th class="feedback">Feedback 3 </th>
-                            <th class="rating">Rating 3 </th>
+                            <th>User 3</th>
+                            <th class="rating">3 </th>
+                            <th class="date">01/01/03</th>
                         </tr>
                     </tbody>
                     <!--<?php
@@ -73,6 +90,7 @@
                         }
                         $conn->close();
                     ?>-->
+
                 </table>
             </div>
 
