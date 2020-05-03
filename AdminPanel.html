@@ -56,41 +56,45 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th class="product">Product 1</th>
-                            <th class="feedback">
+                            <td class="product">Product 1</td>
+                            <td class="feedback">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio lacus, viverra vel sagittis vel, bibendum nec odio. Donec at maximus augue, et malesuada neque. Sed convallis pulvinar nulla. Nullam mollis non dui sed pulvinar. Pellentesque id ullamcorper nulla. Phasellus blandit congue finibus. Duis ultrices laoreet congue
-                            </th>
-                            <th>User 1</th>
-                            <th class="rating">1</th>
-                            <th class="date">01/01/01</th>
+                            </td>
+                            <td>User 1</td>
+                            <td class="rating">1</td>
+                            <td class="date">01/01/01</td>
                         </tr>
                         <tr>
-                            <th class="product">Product 1</th>
-                            <th class="feedback">Feedback 2 </th>
-                            <th>User 2</th>
-                            <th class="rating">2 </th>
-                            <th class="date">01/01/02</th>
+                            <td class="product">Product 1</td>
+                            <td class="feedback">Feedback 2 </td>
+                            <td>User 2</td>
+                            <td class="rating">2 </td>
+                            <td class="date">01/01/02</td>
                         </tr>
                         <tr>
-                            <th class="product">Product 2</th>
-                            <th class="feedback">Feedback 3 </th>
-                            <th>User 3</th>
-                            <th class="rating">3 </th>
-                            <th class="date">01/01/03</th>
+                            <td class="product">Product 2</td>
+                            <td class="feedback">Feedback 3 </td>
+                            <td>User 3</td>
+                            <td class="rating">3 </td>
+                            <td class="date">01/01/03</td>
                         </tr>
                     </tbody>
+                    <!--This is the php code to create the feedback table-->
                     <!--<?php
                         include ("connection.php");
                         $result = $conn->query("SELECT * FROM feedbacks");
+                        echo "<tbody>"
                         while ($row = $result->fetch_assoc()) {
                             echo "<tr>";
-                                echo "<th>".$row["feedback"]."</th>";
-                                echo "<th>".$row["rank"]."</th>";
+                                echo "<td class='product'".$row[''].</th>;
+                                echo "<td class='feedback'>".$row["feedback"]."</th>";
+                                echo "<td class='rating'>".$row["rank"]."</th>";
+                                echo "<th class='date'>".$row['']."</th>";
                             echo "</tr>";
                         }
+                        echo "</tbody>"
                         $conn->close();
                     ?>-->
-
                 </table>
             </div>
 

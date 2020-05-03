@@ -1,17 +1,4 @@
-﻿header .header-text {
-    border-left: 1px solid;
-    border-left-color: #335c6d;
-    color: #335c6d;
-    font-size: 20px;
-    font-weight: 400;
-    height: 30px;
-    line-height: 25px;
-    margin-left: 15px;
-    padding: 2px 15px;
-    white-space: nowrap;
-}
-
-input[type="text"],
+﻿input[type="text"],
 input[type="password"] {
     display: inline-block;
     width: 100%;

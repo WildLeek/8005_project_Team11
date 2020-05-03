@@ -77,6 +77,16 @@ button.menu-dropbtn.right {
     float: right;
 }
 
+.header-text {
+    margin-top: 10px;
+    border-left: 1px solid;
+    border-left-color: #335c6d;
+    color: #335c6d;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 2px 15px;
+}
+
 .right-aligned-content {
     right: 0;
 }
@@ -86,6 +96,7 @@ button.menu-dropbtn.right {
     position: absolute;
     background-color: #ffffff;
     min-width: 160px;
+    top: 72px;
     -webkit-box-shadow: 3px 3px 0px 5px #fafafa;
     -moz-box-shadow: 3px 3px 0px 5px #fafafa;
     box-shadow: 3px 3px 0px 5px #fafafa;
@@ -132,21 +143,18 @@ div.dropdown .menu-dropbtn {
 
 
 .whitebtn {
+    text-align: center;
     cursor: pointer;
-    margin-top: 15px !important;
-    padding: 15px;
+    padding-top: 10px;
     display: block;
     width: 100%;
     height: 50px !important;
     color: #009900;
     background-color: transparent;
-    white-space: normal !important;
-    word-wrap: break-word;
-    word-break: normal;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 8px;
-    border-color: #009900
+    border: 3px #009900 solid;
 }
     .whitebtn:hover {
         background-color: #009900;
@@ -181,6 +189,6 @@ input {
         top: 0;
     }
     .logo a img {
-        top: 0;
+        top: -5px;
         left: 0;
     }

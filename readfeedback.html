@@ -1,65 +1,66 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
+
 <head>
-<title>Read feedback</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link href="Common.css" rel="stylesheet" type="text/css">
-  <link href="feedback.css" rel="stylesheet" type="text/css">
-  <script type="application/javascript" src="readfeedback.js"></script>
+    <title>Read feedback</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="StyleSheets/common.css" rel="stylesheet" type="text/css">
+    <link href="StyleSheets/readFeedback.css" rel="stylesheet" type="text/css">
+    <script type="application/javascript" src="readfeedback.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
-  <body>
 
+<body>
 
-    <div id="SBar">
-    <h1>Searching Bar</h1>
-      <input type="text" class="barcontent">
-      <input type="button" class="barbtn"style="width: 40; height: 40;" value="Search">
-    <button class="barbtn">Login</button>
-    </div>
-    <br/>
-    <br/>
-    <div id="Catagory">
-    <button class="catbtn">Catagory ></button>
-    <button class="catbtn">Catagory ></button>
-    <button class="catbtn">Catagory ></button>
-    <button class="catbtn">Catagory</button>
-    </div>
-    <br/>
-    <br/>
-    <div id="table">
-    <input type="text" style="width: 500px;height: 500px;" />
-    </div>
-    <div id="tablebtn1">
-    <div class="tabbtn">
-    <button>User:</button>somebody
-      <br/>
-    </div>
-      <br/>
-    <div class="tabbtn">
-    <button>Date:</button>someday
-    </div>
-      <br/>
-    <div class="tabbtn">
-    <button>Rating:</button>5 Stars
-    </div>
-      <input type="button" class="tabbtn" value="Contact">
-      <br/>
-    </div>
-      
-    <br/>
-    <br/>
-    <div class="closebtn">
-    <div class="catbtn">
-      <button></button>Close
+    <header>
+        <ul class="topnav">
+            <li class="logo"><a href="https://www.sage.com/en-gb/"><img src="Logos/sage-logo.svg" alt="Sage Logo"></a></li>
+            <li><a href="https://www.sage.com/en-gb/products/">Products</a></li>
+            <li><a href="https://www.sage.com/en-gb/blog/">Blog</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="menu-dropbtn right" onclick="showMenu()">Support</button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="https://my.sage.co.uk/public/help.aspx#/customer/support">Knowledgebase</a>
+                        <a href="https://www.sagecity.com/gb">Forums</a>
+                        <a href="https://www.sage.com/en-gb/shop/traininglanding.aspx">Training</a>
+                        <a href="https://www.sage.com/en-gb/support/">Support</a>
+                    </div>
+                </div>
+            </li>
+            <li class="right"><a href="signin_form.html">Sign In</a></li>
+            <li class="right"><a href="Regesteration_form.html">Register</a></li>
+        </ul>
+    </header>
 
-  </body>
-    
+    <div class="container">
+        <h1>Feedback</h1>
+        <div id="table">
+            <input type="text" style="width: 500px;height: 500px;" />
+        </div>
+        <div id="tablebtn1">
+            <div class="tabbtn">
+                <button>User:</button>somebody
+                <br/>
+            </div>
+            <br/>
+            <div class="tabbtn">
+                <button>Date:</button>someday
+            </div>
+            <br/>
+            <div class="tabbtn">
+                <button>Rating:</button>5 Stars
+            </div>
+            <input type="button" class="tabbtn" value="Contact">
+            <br/>
+        </div>
 
-    
-    
-    
-    
-  <script type="text/javascript" src="js/script.js"></script>
+        <br/>
+        <br/>
+        <div class="closebtn">
+            <div class="catbtn">
+                <button></button>Close
+    </div>
 </body>
 
 </html>
