@@ -109,6 +109,11 @@ table, td th {
     .tablesorter-filter {
         height: 25px;
     }
+    table tbody tr td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: solid darkgrey 2px;
+    }
 
 button.btn-indropdown {
     width: 100%;

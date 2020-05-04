@@ -54,10 +54,6 @@ $(function () {
         //defining the date format
         dateFormat: "dd/mm/yyyy",
 
-        //adding the arrows
-        cssAsc: 'up',
-        cssDesc: 'down',
-
         //installs the filter on the table
         widgets: ["filter"],
 

@@ -1,0 +1,141 @@
+﻿table {
+    width: 100%;
+    min-width: 600px;
+    table-layout: fixed;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: white;
+    max-height: 1000px;
+}
+
+.scroll-table {
+    height: 1000px;
+    overflow-y: auto;
+}
+
+table {
+    margin: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+.feedback {
+    text-align: left;
+}
+    table thead th {
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-color: #009900;
+        color: #ffffff;
+        font-size: 25px;
+        border: #009900 1px solid;
+        height: 30px;
+    }
+    table thead th#header-feedback{
+        width: 45%;
+    }
+        table thead th.up {
+            padding-right: 20px;
+            padding-left: 10px;
+            background-image: url("../Logos/up-arrow.png")
+        }
+        table thead th.down {
+            padding-right: 20px;
+            padding-left: 10px;
+            background-image: url("../Logos/down-arrow.png")
+        }
+        table tbody tr td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: solid darkgrey 2px;
+            overflow: hidden;
+        }
+        .long-text {
+            max-height: 150px;
+            position: relative;
+            overflow: hidden;
+        }
+        .long-text p {
+            margin: 0;
+        }
+        .long-text .read-more {
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            background: linear-gradient(to bottom, transparent, white);
+        }
+        .long-text .read-more a.button {
+            background-color: #009900;
+            border-radius: 8px;
+            color: white;
+            padding: 3px;
+            font-size: small;
+        }
+
+th#header-rating,
+th#header-date {
+    cursor: pointer;
+}
+
+table tbody tr th {
+    padding: 3px;
+    border-right: 1px #f2f5f6 solid;
+    border-left: 1px #f2f5f6 solid;
+}
+
+    table tbody tr th.feedback {
+        width: 80% !important;
+        font-weight: lighter;
+        font-size: 15px;
+        text-align: left;
+    }
+
+.tablesorter-filter {
+    height: 25px;
+    width: 100%;
+}
+
+
+/*Voting*/
+.vote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 150px;
+    min-width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.upvote,
+.downvote {
+    max-width: 100px;
+    min-width: 50px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    height: 20px;
+}
+.upvote {
+    background-color: green;
+    font-weight: bold;
+}
+.downvote {
+    background-color: darkred;
+}
+.rating-value {
+    font-size: 20px;
+    display: block;
+    border: 1px solid lightgrey;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 5px;
+}
+.disable {
+    pointer-events: none;
+    background-color: lightgrey;
+    color: black;
+}
