@@ -34,28 +34,34 @@ setTimeout(function () {
     $name2=$_POST["lastname"];
     $email=$_POST["email"];
     $pass=$_POST["password"];
-   /* $usr=$_POST["UserName"];*/
     ?>
 
 
-<?php
-    //SQL query that send form values to the database.
-//Fix pass bug! 
-//Sunday, 3 May 2020 at 20:21:26
-$sql = "INSERT INTO customer (FirstName, SureName, email,password) VALUES ('$name1', '$name2', '$email','$pass')";
+<?php 
+// Sami , Monday, 4 May 2020 at 01:35:12
+$result = $conn->query("SELECT * FROM customer where email='$email'");
 
-    //close the connection with DB
-$conn->query($sql);
-$conn->close();
-    
-    
-    //show the name of user who recently added
-    echo $name1." ".$name2." "."was added successfully.";
+if (mysqli_num_rows($result) >0) {echo "Sorry , This email is exist already \t-\t";
+print_r(mysqli_num_rows($result));
+
+}
+        
+
+else {
+
+  echo "<br />";
+
+          
+            $sql = "INSERT INTO customer (FirstName, SureName, email,password) VALUES ('$name1', '$name2', '$email','$pass')";
+
+                    echo $name1." ".$name2." "."was added successfully.";
+
+                $conn->query($sql);
+                $conn->close();
+               
+                    }
 
     
-    //Sami -- Friday, 13 March 2020 at 05:21:52
-    //--------
-   
 
    ?>
   
