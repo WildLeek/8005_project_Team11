@@ -11,9 +11,9 @@
 <script>
 //sami 29 mar 2020 10:30pm
 setTimeout(function () {
-   window.location.href= 'index.html'; // the redirect goes here
+   window.location.href= 'index.php'; // the redirect goes here
 
-},4000); // 5 seconds
+},5000); // 5 seconds
 
 </script>
 

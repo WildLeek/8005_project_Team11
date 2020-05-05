@@ -27,25 +27,40 @@ include("connection.php");
     $match=false;
     if($row['email'] != "" )
     {echo "<li>"."Hello, ". $row["firstName"]."  ".$row["sureName"]."</li>";
+redirectionT();
         $match=true;} 
     }
 
     if($match==false )
-    {redirection();} 
+    {redirectionF();} 
         echo "</ul>";
 
     $conn->close();
 
 
-function redirection(){
+function redirectionF(){
 
 echo "
 <script> 
 alert(\"Email or password is wrong\")
-window.location.href = \"/../sage/signin_form.html\";
+window.location.href = \"/../8005/signin_form.php\";
 </script>";
 
 }
+
+
+function redirectionT(){
+
+echo "
+<script> 
+alert(\"You will go to feedback page.\")
+window.location.href = \"/../8005/table.php\";
+</script>";
+
+}
+
+
+
 
 /*
 Sami Sunday, 3 May 2020 at 20:41:12
@@ -53,6 +68,7 @@ Sami Sunday, 3 May 2020 at 20:41:12
 
 
     ?>
+
 
 
 
