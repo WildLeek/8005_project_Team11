@@ -13,9 +13,9 @@
 <script>
 //sami Friday, 10 April 2020 at 21:57:02
 setTimeout(function () {
-   window.location.href= 'index.html'; // the redirect goes here
+   window.location.href= 'landingPage.php'; // the redirect goes here
 
-},8000); // 8 seconds
+},6000); // 6 seconds
 
 </script>
 

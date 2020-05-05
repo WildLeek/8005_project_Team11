@@ -3,15 +3,17 @@
 <meta charset="UTF-8">
 <title>Display all products </title>
 
-    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheets/common.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheets/alter_password.css" />
 </head>
 <body>
-<div class = "header">
-        <a href="index.html"><img src="sage-logo.svg" alt="Sage logo"></a>
-    <span class="header-text">Display products</span>
-</div>
+<?php
+$title="Send Feedback";
+include 'dynamicHeader.php';
+dynamicHeader ($title);
+?>
 <p>
-<a href="index.html">Back to Homepage</a>
+<a href="landingPage.php">Back to Homepage</a>
 </p>
 <?php
     /**

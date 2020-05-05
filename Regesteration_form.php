@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="StyleSheets/common.css" />
         <link rel="stylesheet" type="text/css" href="StyleSheets/alter_password.css" />
-
+    <style> * {padding: 0px;}</style>
 </head>
 
 
@@ -32,10 +32,8 @@ dynamicHeader ($title);
 
 <div class="container">
 
+<a href="landingPage.php">Back to Homepage</a>
 
-<br>
-<a href="index.html">Back to Homepage</a>
-<br>
 <!-- Insertion to insert.php -->
 <div class="container">
 <form action ="insert.php" method="post" onsubmit="return check();">
@@ -71,9 +69,7 @@ dynamicHeader ($title);
             <a href="https://my.sage.co.uk/public/login-help/">Need help logging onto My Sage? </a><br />
             <a href="https://my.sage.co.uk/public/product-help/">Sage product help</a><br />
 
-            <!--MG TODO input the sign in page address-->
-            <h6> Existing user?</h6> 
-            <form><button class="loginbtn" formaction="signin_form.html">Sign in</button></form>
+
         </div>
     </div>
     

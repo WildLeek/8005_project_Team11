@@ -5,7 +5,7 @@
 print <<< HEADER
 <header>
         <ul class="topnav">
-            <li class="logo"><a href="https://www.sage.com/en-gb/"><img src="Logos/sage-logo.svg" alt="Sage Logo"></a></li>
+            <li class="logo"><a href="landingPage.php"><img src="Logos/sage-logo.svg" alt="Sage Logo"></a></li>
             <li><a href="https://www.sage.com/en-gb/products/">Products</a></li>
             <li><a href="https://www.sage.com/en-gb/blog/">Blog</a></li>
             <li>

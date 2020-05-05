@@ -29,7 +29,7 @@ dynamicHeader ($title);
        
 
 <div class="container"> <p>
-<a href="index.html">Back to Homepage</a>
+<a href="landingPage.php">Back to Homepage</a>
 </p>
         <!-- ToDo lookup the user to sign in -->
         <!-- Apply session - logging in 

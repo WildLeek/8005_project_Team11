@@ -4,15 +4,20 @@
 <title>Display all feedbacks </title>
 
 <!-- Sami,Friday, 10 April 2020 at 14:51:06 -->
-    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheets/common.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheets/alter_password.css" />
 </head>
 <body>
-<div class = "header">
-        <a href="index.html"><img src="sage-logo.svg" alt="Sage logo"></a>
-    <span class="header-text">Display all feedbacks</span>
-</div>
+
+
+<?php
+$title="All feedbacks";
+include 'dynamicHeader.php';
+dynamicHeader ($title);
+?>
+
 <p>
-<a href="index.html">Back to Homepage</a>
+<a href="landingPage.php">Back to Homepage</a>
 </p>
 <?php
     /**

@@ -27,6 +27,11 @@ include("connection.php");
     $match=false;
     if($row['email'] != "" )
     {echo "<li>"."Hello, ". $row["firstName"]."  ".$row["sureName"]."</li>";
+
+    //take the name put it in the session
+    $_SESSION["name"]=$row["firstName"];
+    //Sami , 5 may 2020
+
 redirectionT();
         $match=true;} 
     }
@@ -43,18 +48,19 @@ function redirectionF(){
 echo "
 <script> 
 alert(\"Email or password is wrong\")
-window.location.href = \"/../8005/signin_form.php\";
+window.location.href = \"../website/signin_form.php\";
 </script>";
 
 }
 
 
 function redirectionT(){
-
+// alert user name from the session . Sami, 5 may 2020
 echo "
 <script> 
+alert(\""."Hello,".$_SESSION["name"]."\")
 alert(\"You will go to feedback page.\")
-window.location.href = \"/../8005/table.php\";
+window.location.href = \"../website/toTable.php\";
 </script>";
 
 }
