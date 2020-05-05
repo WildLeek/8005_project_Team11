@@ -1,34 +1,24 @@
 <html>
+
 <head>
-      <!-- Sami , Friday, 10 April 2020 at 13:51:16 -->
+    <!-- Sami , Friday, 10 April 2020 at 13:51:16 -->
 
-      <title>
-            Send Feedback
-      </title>
-    <link rel="stylesheet" type="text/css" href="StyleSheets/common.css" />
-        <link rel="stylesheet" type="text/css" href="StyleSheets/alter_password.css" />
+    <title>Send Feedback</title>
+    <link href="StyleSheets/common.css" rel="stylesheet" type="text/css">
+    <link href="StyleSheets/feedback.css" rel="stylesheet" type="text/css">
+</head>
 
-
-  </head>
 <body>
-  
-<?php 
-$title="Send Feedback";
-include 'dynamicHeader.php';
-dynamicHeader ($title);
-    ?>
-      <!-- TODO: user and rank should be taken from session and sent from here as well -->
-<div class="container">
-<form action="insertFeedback.php" method="post">
-  <textarea name="feedback" rows="20" cols="50"> Put your feedback here
-  </textarea>
-  <br>
-  <input type="submit">
-</form>
+        <!-- TODO: user and rank should be taken from session and sent from here as well -->
+        <div class="container">
+            <h2>New Feedback</h2>
+            <form action="insertFeedback.php" method="post">
+                <textarea name="feedback" rows="20" cols="50"> Type your feedback here... </textarea>
+                <input class="greenbtn" type="submit">
+            </form>
 
-</div>
+        </div>
 
-     
+</body>
 
-  </body>
-  </html>
+</html>

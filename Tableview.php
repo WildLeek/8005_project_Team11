@@ -40,9 +40,9 @@ print "<div class=\"container\">
                    <tr>
                        <td class=\"product\">Product 1</td>
                        <td class=\"feedback\">
-                           <div class=\"long-text\">
+                           <div class=\"long-text\"><p>
                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio lacus, viverra vel sagittis vel, bibendum nec odio. Donec at maximus augue, et malesuada neque. Sed convallis pulvinar nulla. Nullam mollis non dui sed pulvinar. Pellentesque id ullamcorper nulla. Phasellus blandit congue finibus. Duis ultrices laoreet congue
-                           </div>
+                           </p></div>
                        </td>
                        <td>User 1</td>
                        <td class=\"rating\">
@@ -94,7 +94,7 @@ print "<div class=\"container\">
                        <td class=\"product\">Product 2</td>
                        <td class=\"feedback\">
                             <div class=\"long-text\">
-                                <p>Feedback 3
+                                <p>Feedback 3</p>
                                <p class=\"read-more\"><a href=\"#\" class=\"button\">Read more</a></p>
                             </div>
                         </td>
@@ -111,7 +111,7 @@ print "<div class=\"container\">
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
                             echo "<td class='product'>".$row['feedback']."</td>";
-                            echo "<td class='feedback'><div class='long-text'>".$row["feedback"]."<p class='read-more'><a href='#' class='button'>Read more</a></p></div></td>";
+                            echo "<td class='feedback'><div class='long-text'><p>".$row["feedback"]."</p><p class='read-more'><a href='#' class='button'>Read more</a></p></div></td>";
                             echo "<td class='rating'><div class='vote'><button class='upvote' onclick='vote(\'up\', this.parentElement)'>+1</button><p class='rating-value'>".$row["rank"]."</p><button class='downvote' onclick='vote(\'down\', this.parentElement)'>-1</button></div></td>";
                             echo "<td class='date'>".$row['date']."</td>";
                         echo "</tr>";

@@ -34,27 +34,26 @@ $(function () {
 //making the table "read more" function
 //code taken from https://css-tricks.com/text-fade-read-more/
 $(document).ready(function () {
-    var $el, $ps, $up, totalHeight;
 
     $(".long-text .button").click(function () {
-        totalHeight = 0;
-        $el = $(this);
-        $p = $el.parent();
-        $up = $p.parent();
-        $ps = $up.find("p:not('.read-more')");
+        var totalHeight = 0;
+        var $el = $(this);
+        var $readMore = $el.parent();
+        var $longText = $readMore.parent();
+        var $fullTextPs = $longText.find("p:not('.read-more')");
 
-        $ps.each(function () {
+        $fullTextPs.each(function () {
             totalHeight += $(this).outerHeight();
         });
-        $up
+        $longText
             .css({
-                "height": $up.height(),
+                "height": $longText.height(),
                 "max-height": 500
             })
             .animate({
                 "height": totalHeight
             })
-        $p.fadeOut();
+        $readMore.fadeOut();
         return false;
     })
 
@@ -62,7 +61,7 @@ $(document).ready(function () {
 
 //new feedback popup
 function popUp() {
-    window.open("replyfeedback.html", "_blank", "toolbar=no, scrollbars=yes, top=200, left= 100, width=1000, height=500");
+    window.open("AddFeedback.php", "_blank", "toolbar=no, scrollbars=yes, top=200, left= 100, width=1000, height=500");
 }
 
 //voting
