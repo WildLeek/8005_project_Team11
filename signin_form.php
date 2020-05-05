@@ -57,7 +57,7 @@ dynamicHeader ($title);
 
                     <!--MG TODO input the registration page address-->
                     <h6> Register new user?</h6>
-                    <a href="Regesteration_form.html">Sign Up</a>
+                    <a class="whitebtn" href="Regesteration_form.html">Sign Up</a>
                     <br />
                    
                 </div>
